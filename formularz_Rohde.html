@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+</head>
+<body style="background-color: green; font-family: Arial, sans-serif;">
+    <h1 style="text-align: center;">Formularz muzyczny</h1>
+
+    <form action="mailto:bartekswierczewski09@gmail.com" method="post" style="padding: 10px;" enctype="text/plain">
+        <fieldset>
+            <legend>Dane osobowe</legend>
+            <label for="imie">Imię:</label>
+            <input type="text" id="imie" name="imie"><br><br>
+
+            <label for="drugie_imie">Drugie imię:</label>
+            <input type="text" id="drugie_imie" name="drugie_imie"><br><br>
+
+            <label for="nazwisko">Nazwisko:</label>
+            <input type="text" id="nazwisko" name="nazwisko"><br><br>
+
+            <label for="pseudonim">Pseudonim muzyczny:</label>
+            <input type="text" id="pseudonim" name="pseudonim"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Czy umiesz grać na jakimś instrumencie?</legend>
+            <input type="radio" id="tak" name="programowanie" value="tak">
+            <label for="tak">Tak</label><br>
+
+            <input type="radio" id="nie" name="programowanie" value="nie">
+            <label for="nie">Nie</label><br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Jeżeli umiesz, to na jakim?</legend>
+            <label for="lokomocja">Podaj instrument:</label>
+            <select id="lokomocja" name="lokomocja">
+                <option value="autobus">Gitara</option>
+                <option value="rower">Bas</option>
+                <option value="samochod">Perkusja</option>
+                <option value="pieszo">Syntezator</option>
+                <option value="pociag">Kontrabas</option>
+                <option value="hulajnoga">Nie umiem</option>
+                <option value="inne">Inne</option>
+            </select><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Ulubiony zespół rockowy?</legend>
+            <input type="checkbox" id="beza" name="ciastko" value="beza">
+            <label for="beza">AC/DC</label><br>
+
+            <input type="checkbox" id="sernik" name="ciastko" value="sernik">
+            <label for="sernik">KISS</label><br>
+
+            <input type="checkbox" id="inne" name="ciastko" value="inne">
+            <label for="inne">Red Hot Chili Peppers</label><br><br>
+
+            <label for="ciastko_inne">Jeżeli inny, wpisz go tu:</label><br>
+            <input type="text" id="ciastko_inne" name="ciastko_inne" maxlength="100"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Pozostałe info</legend>
+            <label for="czas">Podaj godzinę wypełnienia formularza:</label>
+            <input type="time" id="czas" name="czas"><br><br>
+
+            <label for="data">Podaj datę wypełnienia formularza:</label>
+            <input type="date" id="data" name="data"><br><br>
+
+            <label for="kolor">Jakiego koloru masz włosy:</label>
+            <input type="color" id="kolor" name="kolor"><br><br>
+
+            <label for="wilgotnosc">W jakim stopniu lubisz Ozziego Osbourna?</label>
+            <input type="range" id="wilgotnosc" name="wilgotnosc" min="0" max="100"><br><br>
+        </fieldset>
+
+        <button type="reset">Zacznij od nowa</button>
+        <button type="submit">Prześlij formularz</button>
+    </form>
+<a href="index.html">Wróć</a>
+</body>
+</html>
